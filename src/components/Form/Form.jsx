@@ -7,8 +7,9 @@ const Form = ({ onSubmit }) => {
 
   event.preventDefault();
     const form = event.target;
-    const text = form.elements.search.value;
-    onSubmit(text);
+    const input = form.elements.search.value;
+    onSubmit(input);
+    form.reset();
   }
 
   return (
