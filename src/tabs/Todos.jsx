@@ -1,9 +1,15 @@
-import Text from '../components/Text/Text';
+import { useEffect, useState } from 'react';
+import Form from '../components/Form/Form';
 
 const Todos = () => {
+
+  const addNewTodo = text => {
+    console.log(text);
+  };
+
   return (
     <>
-      <Text textAlign="center">There are no any todos ...</Text>
+      <Form onSubmit={addNewTodo} />
     </>
   );
 };
